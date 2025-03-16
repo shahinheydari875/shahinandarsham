@@ -1,0 +1,12 @@
+! name: Instagram Only  
+! description: Shows only Instagram profiles and removes duplicates.  
+! public: true  
+! author: Modarres  
+! avatar: #004225  
+
+# حذف همه دامنه‌ها غیر از اینستاگرام  
+*^  
+-https://www.instagram.com/p/*  
+-https://www.instagram.com/reel/*  
+-https://www.instagram.com/stories/*  
+https://www.instagram.com/*  
