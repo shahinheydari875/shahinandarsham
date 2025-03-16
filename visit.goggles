@@ -1,0 +1,20 @@
+! name: Unique Search with Alito & Socialito  
+! description: Use alito for unique websites and socialito for Instagram profiles.  
+! public: true  
+! author: Modarres  
+! avatar: #004225  
+
+# حذف همه نتایج به صورت پیش‌فرض  
+*^  
+
+# فعال‌سازی فقط برای عبارت‌های شامل alito (سایت‌ها بدون تکرار دامنه)  
+alito:*  
+http://*  
+https://*  
+https://(?!www\.instagram\.com)([^/]+)/* -100  
+http://(?!www\.instagram\.com)([^/]+)/* -100  
+
+# فعال‌سازی فقط برای عبارت‌های شامل socialito (پروفایل‌های اینستاگرام بدون تکرار)  
+socialito:*  
+https://www.instagram.com/*  
+https://www.instagram.com/([^/]+)/* -100  
