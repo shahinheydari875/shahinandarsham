@@ -1,0 +1,18 @@
+! name: Unique Websites Only  
+! description: Shows only unique websites and removes duplicate results from the same domain.  
+! public: true  
+! author: Modarres  
+! avatar: #004225  
+
+# حذف همه نتایج به صورت پیش‌فرض  
+*^  
+
+# اجازه دادن به تمام سایت‌ها  
+http://*  
+https://*  
+
+# حذف نتایج تکراری از یک دامنه  
+https://(.*)  
+-https://\1/*  
+http://(.*)  
+-http://\1/*  
