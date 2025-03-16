@@ -1,0 +1,14 @@
+! name: Instagram No Duplicate Profiles
+! description: Removes duplicate Instagram profiles from search results.
+! public: true
+! author: [Your GitHub Username]
+! avatar: #004225
+
+# حذف پروفایل‌های تکراری اینستاگرام
+https://www.instagram.com/*
+
+! rules:
+- domain: "instagram.com"
+- path: "/[a-zA-Z0-9._-]+"
+- query: ""
+- pagination: 10
